@@ -1,39 +1,4 @@
 
-#-----Statement of Authorship----------------------------------------#
-#
-#  This is an individual assessment item.  By submitting this
-#  code I agree that it represents my own work.  I am aware of
-#  the University rule that a student must not act in a manner
-#  which constitutes academic dishonesty as stated and explained
-#  in QUT's Manual of Policies and Procedures, Section C/5.3
-#  "Academic Integrity" and Section E/2.1 "Student Code of Conduct".
-#
-#    Student no: n10463755
-#    Student name: Matthew Hilton
-#
-#  NB: Files submitted without a completed copy of this statement
-#  will not be marked.  Submitted files will be subjected to
-#  software plagiarism analysis using the MoSS system
-#  (http://theory.stanford.edu/~aiken/moss/).
-#
-#--------------------------------------------------------------------#
-
-
-
-#-----Assignment Description-----------------------------------------#
-#
-#  What's On?: Online Entertainment Planning Application
-#
-#  In this assignment you will combine your knowledge of HTMl/XML
-#  mark-up languages with your skills in Python scripting, pattern
-#  matching, and Graphical User Interface design to produce a useful
-#  application for planning an entertainment schedule.  See
-#  the instruction sheet accompanying this file for full details.
-#
-#--------------------------------------------------------------------#
-
-
-
 #-----Imported Functions---------------------------------------------#
 #
 # Below are various import statements for helpful functions.  You
