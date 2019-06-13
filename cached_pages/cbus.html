@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="head"><title>
+	Cbus Super Stadium - What&#39;s On
+</title><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"74e55c57c1","applicationID":"18857214","transactionName":"bgdTY0oFWkRTU0ANWVdNcGRoS1daQUBVA1NKTUFYShBVW0ZVWRRaWBZUGVkXRE8=","queueTime":0,"applicationTime":17,"agent":"","atts":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script> 
+<meta http-equiv="pragma" content="no-cache" /> 
+<meta http-equiv="content-style-type" content="text/css" /> 
+<meta http-equiv="content-script-type" content="text/javascript" /> 
+<meta name="viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
+<meta name="apple-mobile-web-app-title" content="Cbussuperstadium" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" type="text/css" href="/CMSPages/GetResource.ashx?stylesheetfile=~/Cbussuperstadium/css/bootstrap/bootstrap.min.css">
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="/CMSPages/GetResource.ashx?stylesheetfile=~/Cbussuperstadium/css/slick/slick.css">
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="/CMSPages/GetResource.ashx?stylesheetfile=~/Cbussuperstadium/css/slick/slick-theme.css">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">  
+<link href="/CMSPages/GetResource.ashx?stylesheetfile=~/Cbussuperstadium/css/style.css" rel="stylesheet" type="text/css">
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/CMSPages/GetResource.ashx?scriptfile=~/Cbussuperstadium/js/jquery3.3.1.min.js"></script>
+<script src="/CMSPages/GetResource.ashx?scriptfile=~/Cbussuperstadium/js/popper.min.js"></script>
+<script src="/CMSPages/GetResource.ashx?scriptfile=~/Cbussuperstadium/js/bootstrap/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="/CMSPages/GetResource.ashx?scriptfile=~/Cbussuperstadium/js/slick@1.8.1.min.js"></script>
+<script src="/Stadiums/plugins/bower_components/instafeed.js/instafeed.js"></script>
+
+<!--<script src="/CMSPages/GetResource.ashx?scriptfile=/Gabba/js/carousel.js"></script>-->
+<script src="/CMSPages/GetResource.ashx?scriptfile=~/Cbussuperstadium/js/modernizr.js"></script>
+<script src="/CMSPages/GetResource.ashx?scriptfile=~/Cbussuperstadium/js/template.js"></script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1732408277035810');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1732408277035810&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105618542-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-105618542-3');
+</script><link href="/CMSPages/GetResource.ashx?stylesheetfile=~/Cbussuperstadium/css/adjust.css" rel="stylesheet" type="text/css"> 
+<link href="/Cbussuperstadium/assets/favicon.png" type="image/png" rel="shortcut icon"/>
+<link href="/Cbussuperstadium/assets/favicon.png" type="image/png" rel="icon"/>
+<link href="/CMSPages/GetResource.ashx?_webparts=677" type="text/css" rel="stylesheet"/>
+</head>
+<body class="LTR Unknown ENAU ContentBody" >
+    
+    <form method="post" action="/what-s-on.aspx" id="form">
+<input type="hidden" name="__CMSCsrfToken" id="__CMSCsrfToken" value="HJUKEDvn0tFkO3Z369JiacgxRu9u9jtAdoA+K56eNh81elKL5Doy6exbco0PJfKWOMQkaJ8U95AcD1zodGngW37olVOYlw2URhq/cw9fXxQ=" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="QLCcj2NkhW1lXW8nG4mio9LQOByx+gB8Ft+4VG56aTu4TvXatjOqQOuNyYFChmxdeLA0EZhoFiYkw8HHFDmwEvzH4clUj4X9spCY2qDzzqVEWc4ZYw8LdhACm2rjoBCBOOCvL8eFPB8/fQ+VoSDPQ4rz/p+pCZokp7z7tEomjdt5L3U6Mz9/inJ3sgjd9YAkjiXnvigJAVFEWMTz5uQBYPpCARD6RtKktFtM85MJMniaGMUpunKOFRGJXhVjqhTsYBFyA+ulqbU6XcFznZhcYqrYZthRyiUgp7C9mb0IPrLrcN3dFfj4wWlkTrDjeWQhl6SZXAzapKdTnvYnjoocfpQsgdxvicYpOFgOVK4JK0l2JlKs7L7OxMYo+C1GVfK6OjqaTcGX0P02s5DJVsPxeuWnI4Vvy81+CREQQ+SW9QPbVH9wPcC47HxEs9WgG7rlAvvJFJNAG7mL+nr0jX/5DDD8B7sgYQpGqDrjNMVMJVHPWdsVQkECZFUUrao5h2YeIYyK2505tQUe+kNHABkE9MS+l3ti6s3wGnwnmj6FwwgDs4fOOnFWOzcCVAmxxhuTLjw3pOchUhkKZR4/b4mqFFfHyaACKGgBj0qS9+S8Ec3jKbkaCkFqCeAZMp/t1nHSDXHhQQrQBDUqmgmDWGYu29LxeDbeVWAkynwF2WOAXw1/UB++WHZy1+3A4pURjup9mFMty5LZdcUa8+eSCh5aedL3/RrCigKWxwtjUgeCxyt2JTZz+dHfkvYy8/0VbZvdwYOBuvI7JPbTE/BD6OKXJPx1Xi3SG5+63EHv1XASMqUNzYnugghKXKGFSXqa2wHhW/BeJV8g2O1aamaab6QmsgBmpF7jvAypXWEk3yGnyJBCqhcNONJLy6HgT6g4XJ7KsfoyZYXNCVVyl1r8Hy6Mvs8iRU0y3smbxh+PSFg5GUGjhG3TTVdahUWkE6Mmk35o77C4Azd66P/219b8bllUOPVau7KkPVeOfq2y/R46nkPYYL9hlGbeSHnLQ47ntLR9WklIOnhYEeK/XXDBD53z+KPHoK/PZZVUNq9xprFVX05j52P2qxsUNp/J9gr5mZYO8nicbBunECyaXl/r9nhpIzyMlZZLtX5l4n7D3b5L8pmI3+1vRMhM8iXmBtqtUA71Dg99TRVyZUnXdqK8bhJtH49SInPjK7kEe0tatsL2zZd4O9xPWSTs145VkuigzoLX7AP4+irTNokoKOICv2nA5Kz26TgmWC8peXFyBoJLmFC8X+DyGr4nAK3UVA+P0/ANspNtlFxYBlfIx5XBKnAmLOKgUKCFD+pD4jvLCoFTq0G5+ZCu33PxWwd09u20HLjCxkV1X19V1DPTDZguNEtceF7IBmJR8q+e3rWza0o8OqswQB4FV5cdgC4u5IWKJovizMoGOIOaoeqgK4YcEZgplr1b8F+hSfIHv/2FuS1nSS91chCgkMfRgbnDz4T7aaE3eWhIZRgWaABWefdeGb7rN8rTaHNwcth0H5riJYHm/OJMS3M3s0FIXnL7TedUNs3uda2EzxirEN4fSxJYd4sE9sE473dygIxLMnw9D5siVQD2CqzjxLwZ5NJTKUkJlYDNlrmdLUmxa0kMDTu3tj2QW1xgBR7tSbHgCdjLpi6lgHfxGGztURXafTLnezWjXd1ZETas5PrN9tyDdS4RaCAEl0Hp53bwJhITa3daRod7WMkf0ptMYqTVMPqclm/NSiPo4Mo/sqR82ZuPsoI+iBv/rR87U7rPVTo9gbX5GEtaQZjXzWBdz5N5tOw5Mi8ZjI/9m+sAfjdqQI37sSg6dS6eW0VKejlwy8dnf4QJ1OdJUkDBv3fD6eehCt97gfYoa+SvU9aEKtnbWIqOIm1BHeUb1ZcihXUsufUuTtWKZ0y2QvtzolePHgk/+Tc/mf2bda18HSie78/vt1u4yDehNtqaTrCvTAfdeWAOKaSgunoAQ7bKBS1lilRT4EYpgCsMn47fhpV53p6iG1T4LxN3KN+Nd+FNH8dvLfGcTf6Qfk5HjxcGmgKk14bpli7z0lHs0bntUhp101ISjT3XPMyGNW1aVog7Xmm739YV+YRHHWzl5v4o+I3IXn9Y0xm3d66ec9t7ERcLw3zjazPH124EybZtzW77W3vPGnV/D9/NmSWEHdOvJKHCJF9lrRfMGO5+iW7gCIDVzEsAPB3PFbslZp2kC14P0sb6/QHKO6+EjVPbcpVYOWL8Y5yZTxCaW/bSxyHTt3GRYUPuWfKPO/uPDS1PYjAqck+L1TLEHlRryLZtAPxdQ/YhJ6liXXo3Kzn4fw7J4qRVL57wxsqlPO0IMdBYrixIPgmVUeSu4X4bLAzSjTPzCI0TADOISqxFeQt4+ZJYbvZ6mWA+aCoWdw4KoS+BmrC4+l+cDn/gXOb9WYbcLA96IT35R294IdgwhVYLhvpjmEkervrTzHrMacKsGC359nzxTJGoInzbo3O2h3UUSMcjFaBAztA8tuP7X+T6W5ar6FK0njISq5gakvY8Jfo5ZjDPJUQkVffJn9RsvRHvxAX9cZrG+xq+QfveB6DgtlAylt4d3/LuFohhNC3ep7c1u7Nm7n6zx6ugL9PZcUv2OoEr5xcLFiNb7Yq+SSb3Z2+yChSjMAFZwJbDRWBoS/GPhu4OR5R2DBbbnjWRWl9GgwfYhodHGzCVhIkC74HhSsg3TCJzMCct9WKLpfkhjZ84EKbTbLi7Y8RJHXOb2uYYAzP7EajA8oOzhD3pmJvcC7pXIMPuRfG109MCCxDtKd+1P5+mVZ1S0ODY1ONOXZmMy1PZT9cUt/hWue2/3bQoTVhuKlGGvy8Gt1LPUVvOAhyW24dMswxJXn+icG/oJdWo9yCujFSlNWhF1t97eS4qmX9RS2n+BswxHEEWeaTOofqez9WQmoBUC306brlUz2Ni+2+BlnnXco12iI881vUpLaCJbf7osyt3AVuCHEOoRoFnVWNHiY6ZP9k7MffNDD9WL6jYuccsmQPFt8qx8jo3BYtnBRds88vxzhiAlMCvR7jclSUlZiYeYHo9Ko2khABKfTOezIVRGDOnyQmnD0bmyqpjTXm11ncOuBo0K7Lo3huHGsIMkKFYEjOCajRdfu7HIaDzalBDkXKBAe65KJ3ZFpolH6Rpv1XT6aiPEmRqIFLR8B0L38J/7qx41GfWXDjZ3hFucYFNlUIYjk1GFx1uut9SNDqkFjCbhc8SBS8BqbX11ip6GCCzch4vNLuFUqsRljMyqUCox9qSHGmL0gXu1ADwHQY9HT5sgz5rFahMl41aU3OU/Mtx0rNfBsV1CYBo3GzWTTZC3Z+KDG6vrKmdOSE1x46jhNx5HP2xJdCVLVfbtRAKvXDOsWo3GgaXs32ohR6qg5xk2jLPj9RsO5vO/jSuTJkQ1G93Q/1bx8LNrWqJVfop0Q4W0bzU3lDrYVHEL52EqYoEFCkb7h91y9qRYXFJ738bg0Ptlidk6T9g+NBFga+Nkr4QvPBFfft4VrRW4V2Gwc4sVJd8PEnpr1h/uwZziMZ6WEvYl4oj5mGbEbjLV75utdQd7Jsf4pINthYcZFG4CL+exfL3v9YjCCarHPgdoFI9/HqSOV1uHLsp7JdUZ2pPaCqTjfXoi7v9d8YSUo/D1+cpTZ8k3mYwiLdlkDqplUjS0q6SZK2+JzypymH+lqyyhE9j8atL3tPFI7tagTPreVPvoTaOkcQqVEWx0m/of50E9jlDmTkSaCQCEGWWSMGo/K1A1y/HAZq+gVWAFeG6AT6XsglmYZxIWkiy8QQGcEROH1GjRLnG3Cno5xmBvmRnin5gp66D4sdgg5pfA7R4FLaBVhTGuI8SFmD8QTkWj3tZ2J+SMFlfPI0Sr54gvSBrAzp6YUSvh+tmXtzp6OwZ2MnCAFA3WJqGUyws1sJ2A54QDgsKSiRWpp+g1dIQkLDiYZekAnoeP5ljrLvSC6XLSI2LrduUmcsknJbnmaZz06LP0Y/CdlT8b+KHLmUcOGzlN6QMZ7Pr+qIaM5ZFrO4+8bgOyoS6elds1FqzRvqAI6/HpUxKCe2Ei2iUpYOIrWh6a0jJ5ROe2BpEzAmPW06ItolC3pKCtlXQFIN8Vrddi6/kydTPK6TJSmZ3TBaRIt0Mi0lqjVGepvf97AzPooawc5/SXuzAio4AlRym3IOG850omrqlIie23Mb6rSzRIe32rrrwFl5I3e82dFneA4LpIEgbQCDEUsOilD9G9n2mm7V8itKjn4sDNMRE54FKUKIkscYyxPOUDHRymzRZc9xFKSyvV0zuEC8EERm+auDoIYJ1M9CZdAjhMRvTN4f2do3oWvYxTXNlm4qY6NSE0HSD7S24tDRp/BgcZQmrB7QiySnW5VOPxyvCABDdOSaXdc89mpIZcLl+qECvdvahxLlbPsyr2iVTfoBhTnIOvmIfyD89XXGDxP+6Wy6SOQ6MjagAK0SrvZXtZClqCQRb5KsYGd0OphoZ2suPEBQVW+nnubCDbItRq5xD8rc1cf/o0SCPMblXJXHTik323g6VqFpx29YzazJJeG/fV28Hw47oPt4z+Kx49umTpNFQ9ceU0g9kH7jfOLlUA1BxR0jZyCO5ScQNFdwRqedQfI1Q1simQ4t4AwuZMFkkCZPnBp3ytuzwo3AwXt0szuj2mOGEkPxKcBGLzMZ2yN9hjlirgr2UGqqkGLQvOAHtATwSSKpnA3OPDJP3I8zPJkqOrjTYFHBJ6bLwmHD6oByYD3Wr3tjry58JbUzUToqirgFxcJ6d6kCND1DNYKXpcwatO+OnX/QXc+2YvXpd0yrFm/wtoekEmoplNkBUQD7yIr2rjhhl6dkL9xQ3iZ+Xpat5pM0ApF+p7Yd36LDMzWJRNBjyVbzFeAKoozjX/hFOn1rv9IW30MnYKxG6BZk9eqEitHw90xFAZedF3rR/9lg1j2KT4nQigpiA81x9kyayeOGHD1YZLtdNmuPUxjsiFzcFr/QFV0tFCgOMAgX+2FAPwGG7PEqBY7c1nNoVCmVQ1TCKncIeA7pKofZptv5geRzbY1YtW7uU91XXqGogs0m3NAw9BuCX02viWz8/MbAi1fkL0SWqaSUFWjG982uWGaMsNTkfFF98HqYLScFZo6/LIiDINP/1v1NQLtpc3aPpGXQ82MTauIgnI7tmNqPr8WlV4NQQYIYfHVEIfs83Df8cUf06obHVVv+HL8esE7460L7kfNHqv2yHO3OESq5HPt/PEwqx9FrWacuWeK4q0ncxzPpwhKWQnzfkegD/QQ5eSvh1cctaTI/9k795l/B9+PJ3k9DvHHzKUuiPbs98CwPTESSkBF5n63JWlIGzRBN0cXsbRjH1Fnx9wM0wlfnfyL8ipatx97K+qbDiWYVrQ5PcU51WA6Yjs84yo5RZr95iKAWNEKKwMNTJhu79mcWLfVcllBkhNrFtHvYB+4IHoLSnpeYyKE20/EgeKrnwhG/ZuQ+3IlBzHZlPzDVgDNApHGuUyC0ZsaXO7SF3fh6nPzyBNdJeBELNX/gYXrxPYGilTEizBb2+C8aOTuk0vytBBE34xR6/c/fIhCie1r0pSGaEEwtYTf8L/T7n+FyKBrDAchXd4FuWopL3MP6RRBRKmKJkAHEr9cdiYu538YVhVbfhvq/+BTQ8RyTC4yw4rELFSAXQ2gYwHZjMWv2kV2M9CdkdJuGnqfbqMG51UqgZ8+88U6NkUHwVg97lW1U15xFUF/BwGOFt7oxoOwpDBGqPYJVasqX5JchSDs8F3zjOVdeBZ+1nnlbfODBBjzu0jfzqv9W5kHuRAIJYHyBBoKknPkJcWwavXN+ksHk9UKmmnOJpwe2rERu5lJMTD5s7v5J3lE98zg0cGoR753G0LWx0vvT4O+m4Iz6Hz7Fd3I9s2N8gTNf3xfDtCAnLwBRE7hiuypkXzB8QPmk/VQUGBMDjhAAVQ5YdSpPEon2FrFilRXcfVyY3aRU9x4ql3jyfeQS8YehCaFmTdJWYyYhttKG/YmlrnCzI0qVJ9HlosphS7aa07t96RK9/i54qfIWHOTQ7ixTK9evATWcXl0oiacgJC2zV0hVqWttNBgk+lJMi4oTQL2hP7cAL0LEDlSJ+ADgFCjZo7GuWhWoPDDetQDaMfCR/9K6M0UzkCHy6wLiTsPqmIExDERxCsfTbCQZrAjFAZTMZOIw+qgNCgQ+fwfUEjPhVeZeysEX8Ijqzy0Z72O+Oupaba/wR/Yvi2AbUTYbIsWKgG+Hd8IoRVoNQPzZtXlpTXFg3E3m4L91Bxo8lBs9/YX+GGSkRZhjml73+LkloKIfsJqDLZ3zeW7qEvWL7QvPdrZd1sWYWYyBAXr/ZihJ7TpCFvr52JT8meMlrKE+kAvTlL4YTZbB0TqvqF/ycw0YU85T4zBrrgUdC6/WW5dpGF9ymu5jXZYxw9P6BW99NSGme3ETFZZzCvK/T+LNCcKngg2iiMOJ1lPLJJ5QwD/QkSKprl7l8nmv72weJUfqdGryxR4pc6o9K7EBn2R/EUJskF0X2+jKW7C27ktfZ8kxevwUNw0JEzzfl4RJN/NWp2O2YUI0+fvdYJdE2pmCQbc6JfPMxPzNjMQZX1nNm3GB2VePRjOt5JHfQo0N4nofbR/71JYKp+OV92pgl/hXSHhcFLaoEtqxNx4oomVwDk73ZTpJFKZCPsIubKygQ5peJZsPm70Q4bgXm6nk2OSoimEV7o5ynqSVZCqSTsz8EnhQRkIQ+S5WmcAgeGhMkf3GUDD1DubjMNYbm0I0O/TdMqzeCAu/jjnXO9MwrfdVvoo33gLQ4+T9JiEF008krR6rnefmuI7PNsOu+x1ErlKwEImWG43frZHs3gFoHDlC9xvzuRaKZ3UNb+yTWI5APkrt/B60IyYsQ43QkDr4MuAHNiV+xIOqszqwD1xZWxGKfI0wAzfFOgPcU8jx0+cgSfjVynvTCeTKcrApQXzams3aHustK2cDyHO9m5BQoCFSPLth2UVpu4daK4sOUAwlV7BK/E+i3hwMYaBQf7F2eQcwCRlmDkvWj4YJSN2O8BS58gRBW9DQJM/H8eYYKcv6Vr0HIAemi3Fjv+8my0HAiMsXZOxIFT981b6KVfhlps02jxLe1VSitDbHsGLWqnjDRoHoIhd/xd8uZdMRbJR93GRhq0a5qpAhtYg9wJScYc7zZnOQhxfjH2JZuSbS82szuXS7YlFe5/bquqh56vp8n9hllrRme+ZgtW/WHIXtpqRtaU0/zMxfvb9jKinJ0jRHttlqMBQA+mRFqUiZyFx1OTVVgeDAFPsUOQ3gcL35fftS0MepSJzgXBoSL16qJChWYyQGHtAK06MlaWAw6cd8V4ru1K1dGorH/EvqulIg538vxRnjbBn6DtCAsqk1VE3tJwOGN5CyDXPhOrPRI6D6ZWFI2/L4Pu7xCx2xaQ9GqQI6QRsbuGmq/xn9+33b/EqqgnSGaZNyC6+8B+M8QP/5uNKyLIsY5mpXuQIwfTg8mXIZe5cnNMyFEbz9Alr4XJwyQfFV3khgpFBiQfG1seGs7HkQY7LBA6WSnWbWrKmMi6LP8FMX7JPCB5yck3uKTiMhEBbnuChtYFKjlzSYLu4jbVHrcWMGgSQ/KI2tqhRrgNDYmY2CFchKtEqVlxz4B+OTwhm3wBduNmrvmBszFgqn+PTAVpk+Sp+9kxmq2piqIMADkdIK6cLUzZzfKOkYhxgvpSj+gBFV+AHHO7dWfni/69cy2/dL8yt3TDhoAYtZmCULYhU13b9kzQRzzgG5nqzXb7Cu8w6pNlOs1ZYC1LpD8k1iFaXuU6wI6wtAxR9+0eauFu7zrgakPwrNtOOB2i2oWH/Gzr3aiOt3VevO1FTFX/W712yJQW4QPrpWr/jMON5MlzWWa6rks5C0THBKYD7vryBSFjAY5m87DmznMQXJ+JRahJWnEK2ggjZ0iO7GWfCD9sC6uRUMV+lKTmGV8Sf3Sf52oJS7l1BrLG5oXUp91snYGfWNpDpH70UWEDtW94E244CVlAsK/2UR1g+EoJCgmm+ok8DXX53vY/C9LSMITEanGcjSP6zQnwjXiBsgKjtVjuBO19sPnlvMNecB0Yw6nxSEg8wAI2jw/C30sJgyCPxdRUPrkjt5tjTHmZCCKsdqLZbEhskjThvgakKTIaLnflmH6cqDHUCfOqVnHVIQOoTHUHzS71MC5Nl4DYWUXuQj2BfuYQHo9/YpvAkaPCCgfTxNMMmUeTGUXkhik8xML56YS8SXjd1NyA02QCwN9ojWiT5y40o5WaSGWN5vACDSkVHFq4A49ZXhfO+16FZ6pdVQfQD4KjD+2TancocMNvsFIZ//kCBNtj47mkZcTS6t72cEWAdTkGsbl1KeH4Vj5kcBWt4SO6bdWLSJPNKyQvDJ7mCw+Eh6nMna3B3ThQ30BxBIf9+j+LiRomrh0cOIYfwNVyTAFm7ADRqB8JuqWP/t1K1Cp0XJUxEfc3ssgajDqyCCC1dfcbwSH5DqCxy5v8ve3tji98stOjY8kD+Qi7/JdC1ZReHBVfo5xcwSUYOwv9HUvQFJutMn3IbnooK9yN05K6GzlV5qRgD86vtFVxcRQPx2OTGPdg4FinVfV4MDcmkUTCqPOSPnGObYSWz8mob/vIBlrLk8wspi5iRmhT4KKjVDND9hxqzAUzajy3gd0PRn3CjDgutewQrDJvPdxeuXxA5chQRUiuaALhXYQV2McJ+/AdJJ+K3G+H0rMhgZl3t0y8vSTXysyHkShQJojQqCeZtIoeazI3nByOlDGEuCbMkvQyUM+2fE2JYO+HkMTKy/hTpX48auxHPYDHJebbOu3G+erPCQ8rdNyKbMeMY5OXkutrskCnhbuQHCI78faaFKR3HyIpmIhPGp8NBcvzjLkLMyq++HrgedfiflR4liDP2ES0GCzVHIVA36fih2uaOqTVvKseoe73rjf/Fq5kunU0YugpI/yOygnjvd3XavWtmeMcAzfpUITNsJ3frqW6m6ApMSTHNPshMR78YzPuf/IBCyuXdrtQ/mzx7Nh5wcDienjm1Uf/dLLeFXyyEDq9m2cZ8Fm2FCf5zbc/CJ2z1uKc8ezGhb4npuBQCEE1mGrlo8y/jEEYQuAptG8cq8ON+fk4XDPTbFy4fhR2wutOVZtsky7tiuvGQ1qWD5KsA59DpPmJG6wpDqvg90uVPxmx90qApNcS75Gfwp8g0ayFd5duL1BO9dX6jJ/IZKJpEbV36ex2bur2oFRLUODGoKRg/FJvbYpCXNxeQGuTRSFf/nw/GnpiEGTu92WAenYS3CA0yNc/7exm6K9U9oMJnQyaPXk52/f4xAWoaMlSQ3xHLnF53QsMlVNvuGkhJvzFh9cMfwJf5bUzfy5qo1hjplYGeh79OWgj1JZdJRxW3LUVdeuGLpkCTGzISJgOmKn3G2ABCXSNykKMBfFXKALJTzdydIyg9j9N35176z/L8jD87YFk1d9CVmGpw06LJ0Fw/mIX1ypjrHm54hGwrs6UWmdW7hZetOyzXz3Dv0GRxGolX5rTlQWlpDHt5CGaMHuvd8itspVApAKaI9a3R1OD0GIEQQBb+mrGCIqKIrqC62YucTB0K41m2v8E5HdbazhvUcaVRFcdV7CkT8JVA576XwZKE92TtXs7KD2YL7uLJh9Gp18O6ihfkgSsaIFFQ1prLvEyfgDyQBQaZcNKQ1wm+elU1Xk2BVwrf4S0WI09+sr2tXTF9/i4fyzoAHTSG/lVvlmrfiFNxjSiyIx1EklW7i/IceXesp0IHim1WGFFzbGKpb6YRF2njOIYjJM/AB0549D0dZhC1VhZAYajixl4yyzDP2A7+/DR/g1cTtYBvjZzxJLVLQrMH4TRSxVyXKsyx4FI5dvdyt57WUdZ+aaBuzecgYB5kjMtJ8Pu2kyrz3HBNRod2t8y6RX5rfT0C8jqsGzrHljWujjw/rhfCYnQ4atUh6W4B5VAXG1aamH813lBfsh6o522usHJNQiLj6AA7u3GaSCtB7C1ZhucDURd7RK0FDh+y9yJlwO4YFyVJICedz6DW/8nTYFNOtpfTputSeXT0JQd4NogbW17FHD7UuzjlY9KnR1DOFC77f26QW7GOBrR5pGToVXVkQg/O17eWujyE2kxNEQXh4hIiXSDTpIJYvpZ/45S+tndBrC7Dw4RDzB+CYr9emENYFloMaom8tazSmuByfLHMc7LAWqHI6jmraifTzUVSNNKTG+OgMKpC0VbOwLeaKGawaScAG0b9kmBamARqXXI/5HJgRB4TRvTk7MuqAHgl8uY/szholeSDA6uaQpdrx917GNprvFby29IdkkSfPwexR652l8c4MNd8UV1qNtrPkgUtlEbeZQWhluT1tKlrKEdyQyoYqaYV44H0C5eh7mKHUZjZP+6VPP/SDXyCaHAHxdEKYL3OVMrHQS/4iOeNwFCeKR41gwPSkQO9UUA8ccUfJsUXyZ3asSI2s3QunW6gP/SBTy7w/D8QBTrfWsNUiFIF19e8AkQD8RXk9rbjb6IRzorMS6ewQgdysYuOb9qjDtFF5twCczXrLzqA6S+YPSZX39vNJoLF1pkmJ6N7FrztXMEXcjHcvFb1tHWsu5w1SFostDZP2GWiEWlcmpOcL1vNpbNmYYHIs30vjSvLnic1uKlEYck3VUhmROZKVE59TfqsA5TdR2BjrcU+04UOoNK5jjnyoaQjlV/7Z8ODOikx3QgXkYNzGqo4b3hdCHZL8hYY80da5zpJvNrDPhjfob8r6Rba13CbGO0noQLA+vaQzqN/Fut/vSJklc/nmd/QrpSYlW//rN2f6VoGWe3DIeduZYo3evh7jBE3wjFbHHHgVI607RDjU15BnZ3E9MPAnm5HwDc6uJy2ddVChJkG7aHd1t1jh1RNrPfnNQXEzT3YfiUF9ouiXkuR1OMk+1vqVewEt0fIf7wkrUdZr/QBRZnLT6doT58JW75rWWhduevR8aB5BGZ/HF8zqwwQYiV+mOuE+cQFGsRH8Le4cPGqwZq64WtppFNYm67XteMk7PwL32QLtQK9vOttbHQyO1mRySsQCjxor0fd802/8ifiJGRyfbD+tHVhw/7QhpPfrH6YMbjVfAEaOydUc4wTnE51CXNWOcFXkUoBzcVVFiN0mrE55FI0htolBju7BluX8Vaoo5YrvNyqWrVto/9vX/6ULACJ4lHgwAh/nrxXQGZHbbdZM6o/LpPZ8knw4dDG68U1gU5UtFV+J/arODQxkSItAnaR/8tbJ2AvXompp7hk2Y5ANt2wM6QBG2POPJxMH1wBBCpfzxLVmGpakvW9jEWxJZgM1b90Qxg+YsrjaGzA4nIxHPhLFe55KUVA1trnkNdHdYloScHGJ0pw6akzxq9UxOETTCsveN0aaFrpwSDOm5NQ7uQuVrRQIoBvNkKNH3BZY79UVfaJ4SmRaJ+g8J9/qULM15ZUl27BmdjGo2Yd4Whd6ccpPEwUthECc/3ebZWhmNVH0NxpQgX0ZRif+76pdOgmZOYt/i9qA1wRtxU5QBH35L1MmphNS86XK0j541ipGht/zg7mXeEQdIE4GSWlXw2j6TuY7zi8msuUh50MZpI2iirWbJg3XQec1R7ziWcxJ/49cqb6AtmDKQbijdHPwNpC+l6rwnlj2hPxgNUtlI4WbBseKdkMJKu0yqNtZ/ra9CHcR4tvNEZKpFoud6NAyr72u92ZpdgQs+fZcKLb8hMS70E24xXuXrF0WWZ6exGzGEyeiJc5xlhJi/r3+Nl5Hm4HjE/T2XQRS9TsyKsROgP0LuVcCb7yx672YP9J5cozM2qlwZcIUyEpP/bd2mWG3HOkBuUL/oIMSKWCgDDTqWwjiksJA/fIJe5eE2hDatWZRE6bJTSEq2vO5d+QPme7p28RaOykmF3vfZ3L05XsCZx0O3dBCuzc8m0QUlIXgj7Ics9GwfL/lHRx/sItFj3luIf9B98Ml/jXB2WCHdqpBnPlPyLckqO7LeuH4r/aqvbaV2aUGW2a6t0SpqSgbJfbgnHInOzP1novewrmvndILq1mxtn7hURWwsfGJGU/dI85IxK8SIunZMNm7yOiRBepZbMvqkHY6YiiW3T/876Lqx18JGDhqQPusEJ3DqdZfY6l3/+LOggWWzQQq8xcmgDnNKO0oofhtyefZjRCpZh0kpO99ZIB1ZryZ2I3hDE8KFr635rIu40irSQj070CEBzJrmlBesQOHG/CgiR3t81cUlcVn4UOjVgUtAe3SNbyMIIIUFpnIvJOXgZZa++yDoAy7AXT9rUbyAh/NLwA2I/S28hB5W5T+FTxaKAvjtKYC6ZZDBrRSXZ5P984TXbI3Z9Uu4mYezJNUMr+UqNj08GR6VI7Qa9F7FkzgUTnPNQDV8uhAR4wpCtoiL9m5gDpQeYqJoYGFbmqjna+7rSHy8UloMPAT0Th6PM91wxpIlfSKRyFglI5PmJbf+WPOeD9SErd0QxVsn2vYQJn1ALoDILyHhbKh0pSy21RnsxxYgoa6UrpC0mz5293G4IIjV5mmK5HFDL00xtiaEEiXQ6qd3i4fWMRSYnDDl2cQMPCtx3YP8ke+p+r+pDcPzWxKAWrzQ6vR1oTIN9rCajfLpA4eMEq/jV7hUMXudeVUzTM8UJYWLA8GwMqqvvY42PtSHjA/1JooBrSDlr61SRIgczi9qtoqzMPSW+o/P8t3bteMpnlkwpq64pbmgAn+3dJxMVappcojOvZCVCqovyyRLceSACSHLkwleHlgA/Lj635PqO+qde1LKGfbVEORySb1Vaw81RMbW9507e+axHg//Ii+I47vJR4Mr8Dsx0ufTcAHWtljopir2Ljc6Wy+poHOngQ5IFa+7PeXob5L8IFIqi75qEgPy8hQy+g4vUpguAvUJ8+eotg+jTwKlfDhrU6/+a5S5eWEHb0v92vn1UvQHqzFb0ZH6geHXfUtkTX5Nr5yHvfmCHhAoBOZNvQbHh9ojJjLak82NNwkbJ3JyQz0U9dt5SnOQG2JMVJon+X++AGWug1UtgoHQ7P+n4wAAmW2dcKMMNMV9zVnLAs0tuzvp1wX6ugSfMreo1EPvxUCJ5K1PnX8Q/4LCeFpx/xKsoMxJwhIGuAb4d2F5DgArfMlwFL3GTbjR02W7210d1nNJujwaqOgnjrk4fbF6LChcBi7dSi1hkWjVHxYW0LyQ+Vg4VhP7fkHBLRseL/Oq1jxF1EIY1KJxkLNXC30t2v6k/yRjVlq2vLgMoPNmnE32Vh0T4O+he2Uxgw2sKOPddx8gxM2vodRGBG+3kbGKMC502+S7lRE1ABEqL2Qn7u2ukYWYS1O20I31alnrjgYAqoqb13UN+kMdM5Pxy/CNWIbot+T+mrnx2nDfrDCaQ6LM0J27Qld+NL+2zBsfCtfQghdkdltnQsW0qnZnT9mMV60tJ1hfXeULnlNfRELIqwmh6gbh3hJQaWWa2/Oa8tb9byFm40EfyZrVYfWljrJaTHeCcTTyEBEmY+QcC1a6rMTbWmwIt3E9vKGrRxDzd0SKjBLoMnU5ApE9LhwhQqupzMY0rQKHroAl+CpWXQQghFrWPEcstdmknW3ixxHgVA53wmcrqI7YGVmSXpj9lCiJTrdtajflXrvE1hhikal1WiSPz7dBG72UXp4fg2pSheMWgBFBZ9Ww0jMe9WFiDt0cSFLep7sURixBsMcodbPQe2TGakowWQRmHD63uWnhVlhQMZyC7BFSKq+fI6dxjTOl4TzVvhMpb12NuWYEwyZxQ1ADgA97zCsBjUOkMdUBprIgp+nrfOrbi3FYaox3yfJ3ULh5BW7MIthewo2pDw+GsXQDwbr8OfKL+QONCxb02V+q8yrc+dORjebEbANb+EA0unLlIn3NQJk9N/CJaafE/1zPtLs00flGJgFAa0aLrfYZWl6sew7o/6ueuR9+2ZwM7sKZYffLUt4EhXDGxBH0vyf/lQB8SrIT7FICvPeStGvHZldzqOVmGoiB+5uMuQb8wYX5fLMUwSq7D4Gla+RxwXd14Tqa9eWlQT8doKHr1q2zJtpZSMM22u5ltTrAfw5vP8ajHhTrn+5bDDEPGHxoyrg+rhYH3ru2FXjjw/KjZnXw/CcLOIYh1hI2XPjp69dpqHPV7ZrzMK+a/EfRdvEV3bQRZ2zQBfsvtGhnZogTkdASgZB6tRMv3B+RQi4O1j5VchslIHafOCkPb/YsCgQzif3Zb/XaHLATWa1PwYdXEwGXYuQSudo2REPDM62gfs8gzvPcRftSvjr5Ee9loGrX7A7nIcHtlFBVThGnLCQ3EHe5xIxGQ1hlVFITfeNxGCtVaJzGmbD8TJza0eYgigxI4SqcTgiFqtEzfIkD2mdcWYINEGPMLUO+KjRAloSmF0yEX6k4vDHIw1OigdX30rW+XvOblY/nqtH0ElQ4fE1USUhq0TUqa0bVIm14XT9EZrqbdYMDv5jts4Ckrs71JR80FQ17WHRNSKAJfGeNmXGMccdH2Ul/9hRq1Kh41j+nmABq10smrFbrhntiTGZjRr4LkpZkqIt9LZIcywlkqBc5Elf7d3ED9tzZelJ5zCgoK65hUe+ZIIo7fIy8yWRyBAIKxXWEUZNPyM5AH6UiGOp+e1eRFtuvYAYcwqy/tBQ8RiZWEGoDDROFtbxPx276NfA7rlslTSs3GQpIiGfFisC1gdnXEkILkfqT6yTnlBeuvrmttFzerfEtLyMGDJdnE16djMcbZX146SJwSPc5ZOP97N+1d/+kk7oVYzgOU12Mf3Tjnv86tFZCrLXLLE4UvolyQ27YwCGSXYUsDX/6S2YSyHT6WYGh91ZeCR0LXa2R+j2CYv/cMIWlHzdVz+4UtZy6VW6FWMamtzJUun+ALBqoDK8wkI1+B94JiPWyujT3CXvjm5EZocYe8rhUeJtgaWQsI46s6B/6JSn3PonSzvLujvq0MYBTPc0uhfWqP5okF6VOPMHVvF9uMCmPEHPtKfGhqI1kf1ABtcbz5bB0/cyC76y8I08zaK89iwkB4MFiEUH54dBTI1Dn4q49cAQt/j1O65zBUY58DlsJbeA5k9aQ4hhd4ZmLC813EIbyO89/b3PR3XIblM9YEpkQpA6/GuoB3QYJtxA4LrVtOc0C1SuzE0EZI8f3GRswZXk92HCaz5b+aNRpmRbGpD+KKImtoqkzCH5KAg49zUX2PLEsGZwJQFh7aDM8JNdKGFoRYFJaB7scIjdd+sGyUNw+UMgqYBCKUTDT2CF7bnYL6PjHfeSjwYRBievZpeyFMAe/W0HafpzfVTF25eXCTF3PFPVASR3WZXGFQZK8ygH0vekPcCt21m9mMkvVMHXAG9L4wsEDUFOppw9nzcU9LnPe9s3S0wxgHIo5nG8FUakHspDJGJ3k/7GkvP4AaLmjcc1M8BqhveuKuUJm7p2UyBcRS7xEEiIP3E9NpJP6cxNfuun6h97g3/iEsY8f/1fQdn5jhtmwMDFBGIZ5ExmNjfWZFyfzoj+Wbi8kqzD9qLBgw1TiK3EDKF93RbH0PnV2iaoKa8HjkRn/cEXnbDAhLHEJnu0qu7e9eZjx13dS6DdqzlnJPi9AzUSKi+Jdi+TgE1KJU/JSyWwHkqtaGRvHo6Eez5drt5YACmqtyp13240uT1iwjX0n1dwg1PEu706QrRTQoXFsJ+9l/8/Eux1KsqKVXvxMtNmYe5JKEB0ONQXEupXUVzWlOgjjPBCD2cjU/V1BAY9VjxGvaAhCZ621iKATjfcgjr3fiix3ELvZHtrm//c6rDRKVEycowGJ6f/HNQu2qK9mxBLhgd/J82zzcKR/kmLK3LesAn0VqKC5JbUnLWGMYNhDKGjsCRcvFJaoMWJtwflSd3uY5X85FQ0q4Qy9n0dop4aLNiVrcB/UUHHgzrIOYBtxQxIfkpoKkUxpr3nik/jUnghxRu8zG6jJuBqaTGon+tJaNFcb2aO+i6I/IqtzUIdnXjb8iMGEpk838k42RoAxAg9l67aIO7C8MQQxYP/276WHGO1LuLxTD+itVQYpXn/NwSEEao3npj6akdy4rTAl9TbjAl7u+o1HME8++xSPi3qfPJaUWP8yUTgOHvrKj9g08IJvd6H5HUJ1kmd3uY/hhSc48rhlhENWPwJ0EWRwOetUrtWRjRzlslzuce2gzHZyGOHkfdR5zspRcbvXIWn2gq36BvXSfACgZdApHZD7vV1Ro77T/jmr2ytA3pifkGdhDWh1DmZD+Y+OIhcAYkYLhpk7s+XErlbJUKP69qtNPqXvcJOmnDZ9zp4X9BiAhKVzaM/EvXvr/5GbYUKPfGYN+miJa47YyS1RSGq5Ofa5mYWDVks2dx1ZAYJ54BEFyX/WIR0XgxSD3NLY/r5bdWNsFSd1GHGePBLrjGKFsNvC0ph1wVPf5kLpM7XnIjM0d3pr/HJLizzWQtEyZNDRC8M22AofwLIyvrYRFeQE8tmc/KVfs/uvkuVYo1TlRjIWynU0hS5hq62I8NHK7q6Sc59QkQMFLFt0NpQ0kTZ5DATkuc2bpnEz5P3i+UluRIcvqqEygK9g7R1BXZFrch+kaV2a1JYaNKPcWPkd8V3SimKozgEPsgYYfcaEGUyV7lOSDeCqGsJQCUIqgVwSr1/Mt1CwLI4oWEORdufgUXHobbHe/mRFH1R4htLQU5fm4eOIWJFz/Nw+s7YTc5Twb/PNVeW0QHgnLBPhsHnk3TwekYhwwlmYdshX9UUZRw/kb69hbDwSFW0kzthQyJ7r7fKVg6ml20hrYxGmCmppZIVeqAD2s0s/BeWjn4E7RjpM4lz2RY4eD2aOhX5hg2MP4kPwrT5Y8RxzaV8nSu4t60qkbX7MzV0+BwlFbD3lGn/rLgWC/u5L8M7MMf1nIFRyvX+bsjTfm3DkXu9iGWQuuV7TiHVF8lqH5a60FcR6/WY7d7ofrg9APBpi6q2Yhnvd1QGHC5B98R24nPVaCiQCw32ciabQXTOl81zVnnlEOUcHttszZNYUaBP2T/zIFzA9VFNV5a1Uql5MWckAW+clrEwRXXgzQ7LSyV0mNTYqHSwGbGfeQ36/l8bqLHTVnSNmc1bRVYV9l0AgT3Jcpey36iAV4WEJ9IVXdJJOWHo7eQE8MQx5v6pxn9t6rCruB8swjwjesEWcaTz4KLaTD8uoSXQpY8geJgQp0wW7VgzhwUcjbD6zjvmtlTfrWzlpca6FVJUB4kr7/P/9J1cjpVmYLSxG6cenT/J33zcQFhClkcMzhz9sXkHD48fUmLpTtNSdwPf0+TO5QphoPjHymLLcjIrMg+ACAx9Vkpf6th2UUEpbTW0qdW8EgZXyEYGUpv8guCHOrjlY3epuEWAqaBKNIZmMX52UVUnGuNoly0AicCJX073/+hRd7ZWIcabXH899b2mkSQVkytINjp0AohKoHidVF1vpQM+7mniigtffc8mPm1DmwWDYLpUgDyIxZzF0Hb8o8LOHVw4N80JBNpiqIJVRVU9ZjHqLV8dhNJXdhtPKHlrxrqWO6jaFUulkpfgDv5ucsL99Yuno9PSoeqgWKSbTgQJMP2ggsxHYVP8nXll8alic6g+G+LJ9Y0sV3cGeI3GPBfDgRn3mARnrmvFRwS+6rRVGzUdXcOaZGJ72GCZ1RZqZTpwFuJQJDfiZ+3RYEeazIFpDR2Ca5RmF8tjwjZVOw2utHAElIWE8a2YzckYep3SSLN6nImFFQVS+OCqDlvFis1nCd7uFGj273gXyqLnFGH6tnFEIDwxxDKeWFd3OMIgh+QouUzyQGvKfxs2LG7Af9jqf1OtgHLJyiFbn4Oj2T6Qobo/x71TMNhC6ZpzjB2Zdng4akuJETYrULfXsFVltj9WrX+b/E3cQ4I4ovU+pI9xlxJl1fcmUzvbiIelSa4P/i+NlXhuX+OzFt1eaH9lIlXrLMoqrPVnoRFJRSEV26ONCcuYXNfElibE2fzxRJXQN9ZRajZN+gpBswO6XOwdfujS0eAgnaoplEFz/8hEZN/GTCFhrK1AMALWf8VB0yP2YZTCskfCHlXCJvqceNGVNwI1YFfinqxg1S0AEGRzZ9JHuPynSlIM9LFZzUm+RerD3CXeYlA0Q4HGCTbnfmGZMg46Zx4xqXaJhR8K8YW45+28PfwuFLLYOuiT+9Bz7qg9Gmj7zt3IVRqyOIeGwX7Cs69ldxREpBrdVysmIsl2qq23tKVh7PF8Wpngajxe8jDKpnA79G4fzA0I6UKcEHQJHzK9LwpkW+Il8ChLMnuMkm+lZs0BfG4ekP5Iz2wwpsVOA8t9EYCZBZ9Uh4AnY3rJwe5zGOTD7oF1CSuvZIeLxxVkpZ5IvYDef0ZutQ+d6gl7u1/ilP4n/bQ0cPvxp4oOaPvLRaqRs4Ue/uQncsAAEJNpsjPua1alEW0mhOThnkfa7Lmm45Xhz/ZJEJOak1UAjxxDVJFI7oZSf3RQBWorZamZ/IoGV+1JaOu0KW5fnUHJ8uPBGUing1ecmCyuZOGwwIdjXUXUH27FZXE48STpz2V3kOQf/yNnjDd3aPbI2yeDTRdFQBKIS3NWmIRthNhQnqGDlCCQv4vuvwSo/TIfWI/bDLLwPmJA78paZQbwRFz7l+yCb/9J2Qbj627QI37sJRcKRvJt51FPTS4luttDKgSrnRkDWnltBeu/NqKdTEgi1Km0R9+yAiaC+zQlE8uRrsx4Jfu7VH1WY8qNIF55QoguVy7jOcOpzYCG1x2j6jiuD7tLQKNrW5f6A5/3eNy6UULCS0c8cB1qZd47vrQnkhXDte254Aw5yVzBpxC773V9h+82HHV6fjjb8JgMhZQvDRoU1irMqtoPmsAqD9SPxXBA+8f/I5lnXjthsXGtcZTPhQlwKXtMKe1615f1/xwyXJnuKAN8734NjPYyzP3vqYFC3umJpULmxj6JFo+FNTrzA36yBe6uxvnb2CGZoQzTRJGY0EA57piJ30OoFBfR/sMHp4X5APinS21R7vlw8Or2TjjfA84niTREIvxIulCIEtOf7RZ6JE4Mug5hz3Qv2T0Y1+YuXNfYPdOcsJZrmKoL26I/taneE4RUQDJ9UKX9TIvEv2+P6DLa2H1iSlKj7AD6WJ0QHB+sgPhpsHlzbuLUG3Vrqu3liBR4csH/TPK4nXQ+VRtyzADQzEy4guBhm0hKHvi6/JLZGXKu4XPXn9w+a/ESbmUk39FWqjxv0Dm2OVE3dFhJfdGtsvYL8fiXJWp+HhW27XT9DD09mkpqdjwMuLLyN5itRWhUqX2gCqAGthCQ7CJ3KlGEcGcGNr9NH2ZB+nssPKhFylItRTP71lvRFlDjW+84PHDm06tt1ebif02jvSluFvdpZdYXlyp9bs09RqMhqz9PgaEBtHdgEOAAu+tCVcsba5masXVWn5jnqyfyCPCVIdrsNGbQUrGHBjHAza40j0oH3d18O58KveB8PKKZRodZgRcnal4YhbCmQgIxZD/JYePFeQ/dcd+X/XKyex6wMp7BwEAuu/xs42sgovSZFwGNHcN/i8t0jUD4kR16Zih1Nxg/51rEConv033fTzGpZyGefKvzSoE5NcMzqxxYh4A9XfKrk2GxCkjbbMEA/6PZL5YcRRj1P0/5n1aNob3NCMY84J84eHgh4wZyUzXABLOk+XhLxsz1YyWf8h/vtR5UxTPhlL5x4OokEzuT8Vz+qeDvM6KrK17gC9xY7f5R+HXgCUeyiiRF6O7vujJIjBRX/iINCs5DxmpQZLzbeYlafBP7O8rqrY+a8UM/Yxild6O+ML5Jh+PgZapWUjNh5VhvnTw24LeWNPsjkGJZJszhez1YR9XFbIUMG+VGPTUTb+OqN9ewJMtRtSZcnCna3eb7Ax0DMPHmbOVp/V85Q0ROdeDfjWRvWOsrMmVaPr3QCtS3ESX+coAi49Xshz6ylGfpVGhtdJrMyJisbc2/jjsh7NOFIB4Ur4WWPSmeDqD6eZlcmMtypM+9cdcdCRxw7wmXQ+1waO92etGW2YpFqBeHxX5vx37zxl9X1Jm+KyblAp27Z4I+NM2lrEUIjzZ8zQ0aZ5TS+FreAW5uTjIjz3I1ZJ+i2s/ocry87PwUbSQRkT4pZ75ztJjtTXSSQz65f7vgeKsX8IEbT9EC2xpkpVvbvzd4dANao7LgPPAkLl7jWx7xJ7lzMlWlnDDpnZ4+ptDWzhxo046IaFkxhN6WIh4bFhh92tCVvUtjr5YUmBGJ4FB2qGM3YwfpGAjzbk+X+fIs+hMN5JR6WiqtdRaqmUf+pOQTPzY8mQf3BGbd/bGtfX1cU8N1CU5xqB0rcjtyQ8zF1cUZ40atr8IYT4juTdpUmV40FA/tDjUy5U6Q7P5O9rwZY9FbGpp864grCiVEjG5NLUi29Aqy4FITTmoQ03totmi4aef9LN417xd3GoJoGdX9LF6uYChvVtJ1iVG2JMtZFeoRsQrObqkMd1KGxU4hEnYo9O6LNH0XfYzxUbeBdNZCy49cXZq3y56stX7afZeoKTKQPR9iN6SfwYWumndJN+vyvq3/MpK5VuojNeSgP2/qLUmSIRcb6qjnzUkwlAKezL89zEtQutsm+Y8VteYFCZctSGvRN1dpL7QYrlBxBNKx4pyeI5gNT0iKhzEhCw7+rE+ZQTZINpvdBvzQV3c5NwJ/WGX9H/ou491K65kASdxWllpsfPgYJknHIUd0EDDiP06F/5PcQHtPv6uSysUGi3cuHKr9j4V5HngfEjnVlLqknzUDrwwcLMR7mhjCKybf+amXpkROubGFP5RzZNWmMZRz1NmAhRYZ/z2SJoKL6/3ZrFaPyRhnr4e+ZJfOuSMRbOzcdOx9k9J+lCjMk2KhpvORO+8DVyZwfuRlR2dv/RbSfOn5hph7JW5RHKrADsquGUIiJsInC/RMIdl+qA5wgUn7eOlIux2ppCpfJuhj6m5fJmUBfh7TdOTjTG7FrEvFUdpwPwfYUgIT1Mwvs4hRNYSsRhU/OclRxa/JZN7+yu5nlavEm97apJHtgLHQOLnPMynoE9xIOE0MFc54YnhjUGjhap9610ETmqfTFvkX4II90kQn4BQ1DNHjIPj8/FgDYv/BoO/C6oG7WGatbXVyBiuvv06J2jJEa0ic6pA+TIR5N2lCpMAgOUxHpN9Wuz7u2gBcnpR6Z1XIZ+n+5QDeYXMy6Uz2E/MZ7/+il3MUfG9CyZVqWa+r4/dsoqjwLcYUUWXbG0F0jxEGxAK1MtoRl9QIgavL21Y+qdM2GM363laQvi7adopUwFyOH6wF72AtQWi2YBamKJzUY+DY6f2p9/lBZ0zLULOsbj/PVuucZcqouzofM9ieGILGZ5eGxYmxK71w7Si2OvWTPszYuYOK9Ev4kae1Oe5i6auxX683tYfbZ5LP+vpyxnacQxlQtnsrHX7TO4LUQCTqitfbBZ6VFW0+JOUuOWROIwhddhS/6/jlNSCC908H0Qav6+TLIr8/2r2lhZFnutSueQXy5tnT8fiZDOu6o/iUq0GQCxQcgv9VQdomBITJFu9gVCyrB5hlcfwEVCgNiKsoV/e9BuitpIJlqpkHJVGyHk7nTWzLqcYvoz6Bwl/FsArOO3yw/uKm8i/EY2aDu6fv9HbeNYX9m9smHzWqNU1La9BxRB0Pupo+uFg1H77gcAy0+e16U03F7UJbgziZGaEELop7MWcusEha05s0elpQ2se+OquCWXXbbqqKsaHm3HonZ++ZVcQ7crpVuYGIICplJofKEBdwcffQv3gljbmnJS5t4yi3gRhEO8CjpoZH61jMl8YEr6pwNbaWgYLWusxU9jrncuSzSrmAQWKiG3iwWyPUtElPorFity2ptNWSuhu7E9ltBxpeDtv8W8nI1MrLv3sL13LxcEIt5Hxqy/HHo/CpOqo7CRwFyUQVjYrx5fCYtBcG2ZY7t2cLzYhlmA+B7jhanj7Ot9a9ZNX++bJPMaR+NX+gb96uzmSTTs4aTsvVhCxcWNWVu4+3CCDa5/goSPX6H6NKuK00zjwbCBjzcs1Mh1pzVBN2XESGPMXDCBJIntLtrtkDJSI2YXl9hjuGI+BgZlbgQD1r6gdETIoaXTxei1Hrz5EYENT65XvUhjzm/c7tzSUxi+rJtjeZBNhpDftljiIYDpSR/8cjHNIzM0gnYWHGJq1AeiGer21iWe2dNjEcbiy837Um4YdqO9+8g0WAWgnJ306UIGXhBNriOaP5WBjQn9Ubzz7/uL/68nmSXDCbail416azsCogYuUTkDcZ/e27qI/gu+yc/HNw/4Or6wMa03V/QynCxYl2s5YiJvkw6YqEBcwgjVxSVE1oWiCM8CL9QaobLR+vDk/82Y1HbV8crok2NMKdMxuiv+QQ38EjQZ9hHYPxJSfYYdgm5pf3jJlJ9SoNmYzMPFnG3afhXZcIFnCjTGDzblI8SWLSm+MMPYgQzdc44zMcMR+kPOs50FfhniQW8NOhpR7obIvuMQhN6/FlNVQDvexKmHMYq2SBbWXsA4a85EmWp/MTm+CXtKkxd2Axpu45kLOddL3TD1tMJp22CCIhaGnZdF+ilsRQQ0eojx2FEhdmT7bLLsK2EeyJ2lZhHQu8PoDe2BRIgJD2K85/KORSkEGlP8Hvaews7yLVLZaRpTiy0JSqnNfYfDJczeuxwHGbCB3kRyNjIjAa3FosCGNkLykxsPaEtjVQK5Ta6o9oH7wZb1jIvFkp/+l7IcapJ8a2piS6a8Zl86uC54Qg886P2ldhxcLoMtruoTkVmOuiZb/tt3pE9GklzRajteeA2eaqBHz6Y7iBr5d62R/kiu/MX7L/WshxQfR2pxkTwSl+pLoFDgwcZJop9B6DkflmkqN7hxjFMOO5CeZHBlEPmJH8aBA3Lj5rKaieeMLvCs9o5yL4PXnmc5SZJKLYAQgzsWJmEBkKW/ldR1we0y4afC+Cbmja4vgrCwSJe/kSlAoQE31/FS/9Xo8aQib3xJmhZynpVLbBLjNMR2Xf6SefyM3/YJgFuxf2Bw9K0lg0VcHIKj/t9F1bqDCCG40pqLMsY7TaHEW1qTiVNftpkT2HsKmUigFVDAbKjiqAzP85Rmlu6bzuD7C3uMBKyo6olFvgd43+5xrAJCbgK4RbecMiaSSeIYw9lnCoh+ovbADpscBWlVmDgVla2+LrWZdk33zrfOqJDJNgIQEQiV3q6HPSItZ83xtXZgeD2em1kIdSdKD4cPk1SygnFTlKaSMy+oKi9GcUo/mebKO7uRymm0+avLNFwQkgUO30pjyh/d7/p2S+yi98RgGkaTD/JD209X6PqWa65P4kxjnRDIC4yEFF12FG+4kikA346Adaw0VTJaQW0Vl8PjswzIp4l3xmjDL/aeesakK/vwOzhnOiNzD4rb1fqAic+UGo8gjg4UzuJuk439FPNZWbI1NTbYyJ+22huHmcRsd1zzqZRGFutOfxvp9uo+rbhKUMAvd3Gh8lWAYvtvHDC/Xs5+gxDKNVxZcaejRe9Jo5wH/NQwo/LdzxoVHZK+/8yde9rgYYSU37OyKBtTGkGJmv9eLxocto3reStvfYegfhZ/gdQ7BTxwoY24fVC2N1NcZmqCeyL6c9xRvE/TC7g45alnAhqB6GN4AvgMA5ck/mT7BUNcCqwxvcqvfaZDYmeAtpE+kg7vinTpJzFdmDzajoYGUBYkfCQJeZqmOYDwNJ+H4SNGfNsUmw3SRiRT/RP8F6HPX9iSLD8NC9KjJ0jE9RVMYz4bifAbU3tS5ik6lR9AQdumF6hppTGDoGUUwRUP37GZUbXvnZEUspO9xd6p9t1YCgbD1JZuZCV8GLqKKNSHSazmhB/dcLDjOl3jlLu/ySWmUVLxNvr7TFdMiq5I4U6id4qFd6iGVvXZNwhV08hHFP3lXIhpR6PXHpxB/KkO/GY1smiXUlPMsJqOQPaEo5PCZSwzWTJ8pBKTZ8js/9PVYaFwGC5uTsA+8zlt6kO/aIHChrRi8VfHRluShm3x/aTHOlZ8iRniiLdEKtJuSSKcZBH1Wo=" />
+
+<input type="hidden" name="lng" id="lng" value="en-AU" />
+<script src="/CMSPages/GetResource.ashx?scriptfile=%7e%2fCMSScripts%2fWebServiceCall.js" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(780); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(780); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="/ScriptResource.axd?d=uHIkleVeDJf4xS50Krz-yNWPfJvSu-lmb1DsaIP9Q38pZmene9EEVBsHWFYqbdpR4emQ6goRBc8b1zCPUv3i9JfuwXXA3Z4uuR08s0Y_020JLHiPk7BJxinqyCjCRhyLeHMxYvOQhXuDC6xmE6xApLPZOmnB-ay9UIiEt4FOfPc1&amp;t=ffffffffcd368728" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "language": "en",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDebuggingEnabled": false,
+  "applicationUrl": "/",
+  "isDialog": false,
+  "isRTL": "false"
+};
+
+//]]>
+</script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+    
+    <div id="ctxM">
+
+</div>
+    
+<header class="bg-white">
+	<div class="container no-gutters-xs-only clearfix">
+		<div class="row no-gutters d-flex justify-content-between align-items-center pt-3 pl-2 pr-2">
+    		<div class="col-4">
+              <a id="primary-logo" href='/'>
+                <img src="/cbussuperstadium/assets/D_LOGO.jpg" class="img-fluid d-none d-md-block">
+                <img src="/cbussuperstadium/assets/M_LOGO.png" class="img-fluid d-md-none">
+              </a>
+    		</div>
+    		<div class="navbar-light d-flex align-items-center">
+    			<div class="d-flex mr-3 mr-md-0">
+    				<a href="https://www.facebook.com/CbusSuperStadium" target="_blank"><span class="sti fb"></span></a>
+                    <a href="https://www.instagram.com/cbussuper.stadium/" target="_blank"><span class="sti insta"></span></a>
+                    <a href="https://twitter.com/cbusstadium?lang=en" target="_blank"><span class="sti twitter"></span></a>
+    				<a href="https://au.linkedin.com/company/cbus-super-stadium" target="_blank"><span class="sti linkedin"></span></a>
+                    <span class="sti search"></span>      
+    			</div>
+				<button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+    		</div>
+		</div>
+        <div class="d-flex justify-content-center justify-content-md-end pb-3">
+            <div id="p_lt_ctl00_SmartSearchBox_pnlSearch" class="searchBox">
+	
+    <label for="p_lt_ctl00_SmartSearchBox_txtWord" id="p_lt_ctl00_SmartSearchBox_lblSearch" style="display:none;">Search for:</label>
+    <input name="p$lt$ctl00$SmartSearchBox$txtWord" type="text" maxlength="1000" id="p_lt_ctl00_SmartSearchBox_txtWord" class="form-control" />
+    <input type="submit" name="p$lt$ctl00$SmartSearchBox$btnSearch" value="GO!" id="p_lt_ctl00_SmartSearchBox_btnSearch" class="btn btn-default" />
+    
+    <div id="p_lt_ctl00_SmartSearchBox_pnlPredictiveResultsHolder" class="predictiveSearchHolder">
+
+	</div>
+
+</div>
+
+        </div>
+		<nav id="menu" class="d-flex justify-content-sm-end">
+		  <ul id="top-menu" class="collapse">
+		    <li>
+		      <h2><a href="/what-s-on.aspx">what's on</a></h2>
+		    </li>
+		    <li>
+		      <h2><a href="#" class="dropdown-menu-toggle">the venue</a></h2>
+     		  <i class="fas fa-sort-up fa-2x"></i>
+		      <ul class="dropdown-ul-menu text-white">
+		        <li>
+		          <h2><a href="/the-venue/stadium-map.aspx">stadium map</a></h2>
+		        </li>
+                <li>
+		          <h2><a href="/the-venue/venue-tours.aspx">venue tours</a></h2>
+		        </li>
+                <li>
+		          <h2><a href="/the-venue/conditions-of-entry.aspx">conditions of entry</a></h2>
+		        </li>
+                <li>
+		          <h2><a href="/the-venue/accessibility.aspx">accessibility</a></h2>
+		        </li>
+                <li>
+		          <h2><a href="/the-venue/latest-news.aspx">latest news</a></h2>
+		        </li>
+             </ul>
+		    <li>
+              <h2><a href="#" class="dropdown-menu-toggle">venue hire</a></h2>
+     		  <i class="fas fa-sort-up fa-2x"></i>
+		      <ul class="dropdown-ul-menu text-white">
+		        <li>
+		          <h2><a href="/venue-hire/venue-functions.aspx">venue functions</a></h2>
+		        </li>
+		        <li>
+		          <h2><a href="/venue-hire/stadium-hire.aspx">stadium hire</a></h2>
+		        </li>
+                <li>
+		          <h2><a href="/venue-hire/corporate-boxes.aspx">corporate boxes</a></h2>
+		        </li>
+		      </ul>
+		    </li>
+		    <li>
+		      <h2><a href="/getting-here.aspx">getting here</a></h2>
+		    </li>
+		    <li>
+		     <h2><a href="#" class="dropdown-menu-toggle">about us</a></h2>
+     		  <i class="fas fa-sort-up fa-2x"></i>
+		      <ul class="dropdown-ul-menu text-white">
+		        <li>
+		          <h2><a href="/about-us/about-the-stadium.aspx">about the stadium</a></h2>
+		        </li>
+                <li>
+		          <h2><a href="/about-us/frequently-asked-questions.aspx">faq</a></h2>
+		        </li>
+		       <li>
+		          <h2><a href="https://www.stadiums.qld.gov.au/careers.aspx" target="_blank">careers</a></h2>
+		        </li>
+                <li>
+                  <h2><a href="https://stadiums.qld.gov.au/tenders.aspx" target="_blank">Tenders</a></h2>
+                </li>
+                <li>
+                  <h2><a href="/about-us/contractors.aspx">Contractors</a></h2>
+                </li>
+                <li>
+		          <h2><a href="/about-us/contact-us.aspx">contact us</a></h2>
+		        </li>
+		      </ul>
+		    </li>
+		  </ul>
+		</nav>
+	</div>
+</header>
+<div id="page-content">
+
+
+<div id="top-banner">
+  <img id="p_lt_ctl01_pageplaceholder_p_lt_ctl00_EditableImage_ucEditableImage_imgImage" class="cover-img" src="/Cbussuperstadium/media/CbusSuperStadium/Cbus-Super-Stadium-Main-Banner.jpg" alt="Cbus Super Stadium at Night" />
+
+
+</div>
+<div class="container no-gutters-xs-only">
+  <div class="bg-white p-3">
+    <h1>WHAT&#39;S ON</h1>
+
+
+
+
+
+  </div>
+  <div class="event-selection coloured d-flex justify-content-end align-items-center pr-3">
+    <h7>UPCOMING EVENTS:</h7>
+    <div class="select-box position-relative d-flex align-items-center ">
+      <img src="/Cbussuperstadium/assets/icons/arrow_icon_white@2x.png" class="position-absolute arrow right-0 top-0 h-100 py-1 active"/>
+      <img src="/Cbussuperstadium/assets/icons/arrow_icon_on@2x.png" class="position-absolute arrow right-0 top-0 h-100 py-1 hover"/>
+      <select class="pr-5" dir="rtl">
+        <option selected>ALL</option>
+        <option value="14">Football (Soccer)&#x200E;</option><option value="16">Other</option><option value="13">Rugby League</option><option value="22">Rugby Union</option><option value="15">Special Event</option> 
+      </select>
+    </div>
+  </div>
+  <script>
+    $(".event-selection select").change(function(){
+      $("#no-results").remove();
+      var hide = true;
+      if($(".event-selection select").val() == "ALL")  {
+        $(".event").addClass("d-flex");
+        $(".event").removeClass("d-none");
+      } else  {
+        $(".event").each(function()  {
+          if($(this).data("category") != $(".event-selection select").val())  {
+            $(this).removeClass("d-flex");
+            $(this).addClass("d-none");
+          } else {
+            $(this).removeClass("d-none");
+            $(this).addClass("d-flex");
+            hide = false;
+          }
+        });
+        if(hide)  {
+          $("<div id='no-results' class='w-100 text-center py-5'><h11>No events coming up.<h11></div>").insertAfter(".event-selection");
+        }  
+      }
+    });
+    </script>
+    
+<div class="event row no-gutters mt-3" data-category="13">
+  <div class="col-4">
+    <img src="/CMSPages/GetFile.aspx?guid=c0c6333f-e7a5-4e9d-a1e0-301b25e09f8f" class="cover-img-top position-absolute">
+  </div>
+  <div class="col-8 gradient-color-vertical-background">
+    <div class="d-flex flex-column justify-content-between h-100 p-3">
+      <div>
+        <h7 class="event-date text-uppercase">Sun 21 Apr</h7>
+        <h5 class="event-time text-uppercase">Gates Open 11:20 AM<br>Start time 2:00 PM</h5>
+        <hr>
+        <h6 class="event-title">GC Titans v Newcastle Knights</h6>
+        <div class="text-only" data-nb-lines="3"><p>Containing the brilliance of Newcastle sensation Kalyn Ponga will be priority No.1 for the Titans in this game, after the electric rookie enjoyed a watershed season in 2018.<br />
+<br />
+The Titans got home 33-26 over the Knights in the corresponding game at Cbus Super Stadium last season, but not before Ponga set the game alight with his individual brilliance, including a long-range try.<br />
+<br />
+It was form that Ponga, one of the game&rsquo;s hottest players, carried through the entire season, leading to him making his State of Origin debut for Queensland.<br />
+<br />
+While the Knights had a disappointing season in 2018, like the Titans they are a team on the rise in 2019.<br />
+<br />
+Representative forwards Tim Glasby and David Klemmer have brought a hard and tough edge to the Knights&#39; pack this season, setting up an explosive confrontation with the Titans&#39; pack boasting giants Ryan James, Shannon Boyd and Moeaki Fotuaika.<br />
+<br />
+Don&rsquo;t forget we have dedicated seating bays available for opposition fans, and every ticket includes free public transport on QR Trains and Translink bus services.<br />
+<br />
+Curtain Raiser Matches - NRL Touch Premiership Gold Coast Titans vs Brisbane Broncos in Men&#39;s and Women&#39;s divisions.<br />
+<br />
+<strong>Gates Open: 11:20am<br />
+1st Curtain Raiser (Titans Physical Disability Team vs Invitational Team: 11.25am<br />
+2nd Curtain Raiser (Titans v Broncos Women&#39;s Touch Football):&nbsp;12:00pm<br />
+3rd Curtain Raiser (Titans v Broncos Men&#39;s Touch Football): 12:40pm</strong><br />
+<b><strong>NRL Kick Off: 2:00pm</strong></b></p>
+</div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-end mt-3">
+         <h7 class="border p-2 hover text-center mt-2"><a href="/Events/GC-Titans-v-Newcastle-Knights-(1).aspx" class="text-uppercase">more information</a></h7>
+         <h7 class='border ml-sm-3 p-2 hover text-center mt-2'><a href='https://premier.ticketek.com.au/shows/Show.aspx?sh=TIT0619' target='_blank' class='text-uppercase'>buy tickets</a></h7>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="event row no-gutters mt-3" data-category="13">
+  <div class="col-4">
+    <img src="/CMSPages/GetFile.aspx?guid=0415cdbc-7c7a-45f5-8c38-39e4615df4be" class="cover-img-top position-absolute">
+  </div>
+  <div class="col-8 gradient-color-vertical-background">
+    <div class="d-flex flex-column justify-content-between h-100 p-3">
+      <div>
+        <h7 class="event-date text-uppercase">Sat 18 May</h7>
+        <h5 class="event-time text-uppercase">Gates Open 12:30 PM<br>Start time 3:00 PM</h5>
+        <hr>
+        <h6 class="event-title">GC Titans v Canterbury-Bankstown Bulldogs</h6>
+        <div class="text-only" data-nb-lines="3"><p>Everyone in rugby league knows that you should never underestimate any team with a guy named Lewis in the No.6 jersey, and that absolutely rings true with the Canterbury Bulldogs in 2019.<br />
+<br />
+Lachlan Lewis, the nephew of former Test skipper and Gold Coast Seagulls captain Wally Lewis, enjoyed a breakthrough season last year, establishing himself as one of the most promising playmakers in the game.<br />
+<br />
+The Bulldogs will be looking for Lewis to continue his rise this season, and form a potentially lethal halves combination with veteran Kieran Foran, who is looking to re-establish himself as one of the game&rsquo;s elite after injury and controversy ruined his 2018 season.<br />
+<br />
+The Bulldogs have recruited Queensland State of Origin prop Dylan Napa, and hope his size and aggression will accelerate the return of the &ldquo;Dogs of War&rdquo; mentality that coach Dean Pay has been working hard to rebuild.<br />
+<br />
+This could be one of the most brutal games of the season. Will the Titans have the extra bit of class needed to get the points?<br />
+<br />
+Don&rsquo;t forget we have dedicated seating bays available for opposition fans, and every ticket includes free public transport on QR Trains and Translink bus services.<br />
+<br />
+<strong>Gates Open: 12:30pm<br />
+Curtain Raiser&nbsp;(Match TBC): 12:35pm<br />
+NRL Kick Off: 3:00pm</strong></p>
+</div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-end mt-3">
+         <h7 class="border p-2 hover text-center mt-2"><a href="/Events/GC-Titans-v-Canterbury-Bankstown-Bulldogs.aspx" class="text-uppercase">more information</a></h7>
+         <h7 class='border ml-sm-3 p-2 hover text-center mt-2'><a href='https://premier.ticketek.com.au/shows/Show.aspx?sh=TIT1019' target='_blank' class='text-uppercase'>buy tickets</a></h7>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="event row no-gutters mt-3" data-category="13">
+  <div class="col-4">
+    <img src="/CMSPages/GetFile.aspx?guid=f2b33a5e-bc23-4f77-8148-0366667f4fb7" class="cover-img-top position-absolute">
+  </div>
+  <div class="col-8 gradient-color-vertical-background">
+    <div class="d-flex flex-column justify-content-between h-100 p-3">
+      <div>
+        <h7 class="event-date text-uppercase">Sun 02 Jun</h7>
+        <h5 class="event-time text-uppercase">Gates Open 2:00 PM<br>Start time 4:05 PM</h5>
+        <hr>
+        <h6 class="event-title">GC Titans v North Queensland Cowboys</h6>
+        <div class="text-only" data-nb-lines="3"><p>The Cowboys did it tough in 2018, but you won&rsquo;t see too many tears being shed among their NRL rivals.<br />
+<br />
+While North Queensland missed the finals and bid farewell to club champion Johnathan Thurston last year, it is hard to believe the Cowboys will be down for long given the talent at their disposal in one of the game&rsquo;s best rosters.<br />
+<br />
+Representative goliaths Jason Taumalolo, Matt Scott, Jordan McLean, Coen Hess, Gavin Cooper and Michael Morgan will this year be joined by Test forward Josh McGuire (Broncos) and former Titan Nene Macdonald (Dragons) as the Cowboys look to return to the top.<br />
+<br />
+One of the biggest and best games of the 2018 season at Cbus Super Stadium, the &ldquo;Surf and Turf&rdquo; derby between the Gold Coast and North Queensland will again be one of the big-ticket matches of the Titans&rsquo; premiership campaign.<br />
+<br />
+Don&rsquo;t forget we have dedicated seating bays available for opposition fans, and every ticket includes free public transport on QR Trains and Translink bus services.<br />
+<br />
+Curtain Raiser Matches - NRL Touch Premiership Gold Coast Titans vs New Zealand Warriors in Men&#39;s and Women&#39;s divisions.<br />
+<br />
+<strong>Gates Open: 2:00pm<br />
+1st Curtain Raiser (Women&#39;s Titans v Warriors Touch Football):&nbsp;2:05pm<br />
+2nd Curtain Raiser (Men&#39;s Titans v Warriors Touch Football):&nbsp;2:45pm<br />
+NRL Kick Off: 4:05pm</strong></p>
+</div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-end mt-3">
+         <h7 class="border p-2 hover text-center mt-2"><a href="/Events/GC-Titans-v-North-Queensland-Cowboys.aspx" class="text-uppercase">more information</a></h7>
+         <h7 class='border ml-sm-3 p-2 hover text-center mt-2'><a href='https://premier.ticketek.com.au/shows/Show.aspx?sh=TIT1219' target='_blank' class='text-uppercase'>buy tickets</a></h7>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="event row no-gutters mt-3" data-category="13">
+  <div class="col-4">
+    <img src="/CMSPages/GetFile.aspx?guid=79fd3509-b772-4c99-b26a-40fd8af302f3" class="cover-img-top position-absolute">
+  </div>
+  <div class="col-8 gradient-color-vertical-background">
+    <div class="d-flex flex-column justify-content-between h-100 p-3">
+      <div>
+        <h7 class="event-date text-uppercase">Fri 14 Jun</h7>
+        <h5 class="event-time text-uppercase">Gates Open 3:30 PM<br>Start time 6:00 PM</h5>
+        <hr>
+        <h6 class="event-title">GC Titans v New Zealand Warriors</h6>
+        <div class="text-only" data-nb-lines="3"><p>This is always one of the biggest games of the season at Cbus Super Stadium, as the visiting Warriors fans bring a unique atmosphere to the home of the Gold Coast Titans.<br />
+<br />
+The sleeping giants of the competition, the Warriors finally looked like stirring last season with new levels of professionalism and consistency to complement their traditional attack-at-all-costs playing philosophy.<br />
+<br />
+The game against the Warriors at Cbus Super Stadium last year delivered the Titans their biggest win of the 2018 season &ndash; a 36-12 pasting that showed just how good this Titans team can be when firing on all cylinders.<br />
+<br />
+Few will forget the try scored by flying Titans winger Phillip Sami when he bamboozled Warriors captain Roger Tuivasa-Sheck with an enormous sidestep on the way to one of his two tries for the afternoon.<br />
+<br />
+Can Sami and the Titans do it again? Get your seat and be there to play your part in making it happen!<br />
+<br />
+Don&rsquo;t forget we have dedicated seating bays available for opposition fans, and every ticket includes free public transport on QR Trains and Translink bus services.<br />
+<br />
+<strong>Gates Open: 3:30pm.<br />
+Corporate Touch Football Grand Final Kick Off:&nbsp;3:35pm.<br />
+Titans Elite Development Sqaud&nbsp;vs Cowboys Development Team Kick Off: 3:55pm.<br />
+NRL Kick Off: 6:00pm.</strong></p>
+</div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-end mt-3">
+         <h7 class="border p-2 hover text-center mt-2"><a href="/Events/GC-Titans-v-New-Zealand-Warriors.aspx" class="text-uppercase">more information</a></h7>
+         <h7 class='border ml-sm-3 p-2 hover text-center mt-2'><a href='https://premier.ticketek.com.au/shows/Show.aspx?sh=TIT1419' target='_blank' class='text-uppercase'>buy tickets</a></h7>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="event row no-gutters mt-3" data-category="13">
+  <div class="col-4">
+    <img src="/CMSPages/GetFile.aspx?guid=e18fa179-92b7-4c65-9f65-f91e2b5d6cdd" class="cover-img-top position-absolute">
+  </div>
+  <div class="col-8 gradient-color-vertical-background">
+    <div class="d-flex flex-column justify-content-between h-100 p-3">
+      <div>
+        <h7 class="event-date text-uppercase">Sat 29 Jun</h7>
+        <h5 class="event-time text-uppercase">Gates Open 12:30 PM<br>Start time 3:00 PM</h5>
+        <hr>
+        <h6 class="event-title">GC Titans v Manly Warringah Sea Eagles</h6>
+        <div class="text-only" data-nb-lines="3"><p>This one will be a little personal for the Manly Sea Eagles.<br />
+<br />
+The Titans were too strong for the silvertails last season, beating Manly both times they squared off in 2018.<br />
+<br />
+The first was a memorable 32-20 win for the Gold Coast at Marley Brown Oval in Gladstone, but it was the second &ndash; a breathtaking 42-34 win to the Titans at Manly&rsquo;s home at Lottoland in Sydney &ndash; that would have hurt them the most.<br />
+<br />
+Manly led that game 22-6 just before halftime in front of their home fans in Round 23, but the brave and resilient Titans clawed their way back off the canvas to score a comeback win for the ages.<br />
+<br />
+AJ Brimson started the fightback with a brilliant try just before halftime, and from there the Titans were relentless, hammering home an unforgettable and gutsy win.<br />
+<br />
+Manly will be determined to make amends when they arrive at Cbus Super Stadium in Round 16, and will have a former Titan helping them on their revenge mission, with Kane Elgey to line up in maroon and white against his former teammates in his home town.<br />
+<br />
+Don&rsquo;t forget we have dedicated seating bays available for opposition fans, and every ticket includes free public transport on QR Trains and Translink bus services.<br />
+<br />
+<strong>Gates Open: 12:30pm<br />
+Curtain Raiser&nbsp;(Match TBC): 12:35pm<br />
+NRL Kick Off: 3:00pm</strong></p>
+</div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-end mt-3">
+         <h7 class="border p-2 hover text-center mt-2"><a href="/Events/GC-Titans-v-Manly-Warringah-Sea-Eagles.aspx" class="text-uppercase">more information</a></h7>
+         <h7 class='border ml-sm-3 p-2 hover text-center mt-2'><a href='https://premier.ticketek.com.au/shows/Show.aspx?sh=TIT1519' target='_blank' class='text-uppercase'>buy tickets</a></h7>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="event row no-gutters mt-3" data-category="13">
+  <div class="col-4">
+    <img src="/CMSPages/GetFile.aspx?guid=69e82b81-1ead-4107-ba9a-a9f2891947a7" class="cover-img-top position-absolute">
+  </div>
+  <div class="col-8 gradient-color-vertical-background">
+    <div class="d-flex flex-column justify-content-between h-100 p-3">
+      <div>
+        <h7 class="event-date text-uppercase">Sun 21 Jul</h7>
+        <h5 class="event-time text-uppercase">Gates Open 11:55 AM<br>Start time 2:00 PM</h5>
+        <hr>
+        <h6 class="event-title">GC Titans v Melbourne Storm</h6>
+        <div class="text-only" data-nb-lines="3"><p>No Billy Slater, no worries for the Melbourne Storm, who remain one of the benchmark sides of the competition after a decade of dominance in the NRL.<br />
+<br />
+Beaten grand finalists last year, the Storm still remain one of the biggest dangers in the competition, with ageless skipper Cameron Smith and brilliant Queenslander Cameron Munster leading a lethal playing roster orchestrated by master coach Craig Bellamy.<br />
+<br />
+But the Titans&rsquo; recent form against the Storm shows that the Gold Coast is ready to go toe-to-toe with any team in the competition.<br />
+<br />
+The last time these two teams met at Cbus Super Stadium, in Round 24 last year, the Titans gave the Storm a mighty fright &ndash; leading 8-0 late in the match.<br />
+<br />
+But the experience and guile of Slater and Munster saw the Storm sneak home for a 10-8 win.<br />
+<br />
+The Titans of 2019 will be ready to make sure they don&rsquo;t let another golden opportunity slip, and show that they can match it with the best teams in the NRL.<br />
+<br />
+Don&rsquo;t forget we have dedicated seating bays available for opposition fans, and every ticket includes free public transport on QR Trains and Translink bus services.<br />
+<br />
+Curtain Raiser Matches - NRL Touch Premiership Gold Coast Titans vs Parramatta Eels in Men&#39;s and Women&#39;s divisions.<br />
+<br />
+<strong>Gates Open: 11:55am<br />
+1st Curtain Raiser&nbsp;(Women&#39;s Titans v Eels Touch Football): 12:00pm<br />
+2nd Curtain Raiser&nbsp;(Men&#39;s Titans v&nbsp;Eels Touch Football): 12:40pm<br />
+NRL Kick Off: 2:00pm</strong><br />
+&nbsp;</p>
+</div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-end mt-3">
+         <h7 class="border p-2 hover text-center mt-2"><a href="/Events/GC-Titans-v-Melbourne-Storm.aspx" class="text-uppercase">more information</a></h7>
+         <h7 class='border ml-sm-3 p-2 hover text-center mt-2'><a href='https://premier.ticketek.com.au/shows/Show.aspx?sh=TIT1819' target='_blank' class='text-uppercase'>buy tickets</a></h7>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="event row no-gutters mt-3" data-category="13">
+  <div class="col-4">
+    <img src="/CMSPages/GetFile.aspx?guid=cd4f2f7f-0add-4204-9214-06ad3f87121e" class="cover-img-top position-absolute">
+  </div>
+  <div class="col-8 gradient-color-vertical-background">
+    <div class="d-flex flex-column justify-content-between h-100 p-3">
+      <div>
+        <h7 class="event-date text-uppercase">Sat 27 Jul</h7>
+        <h5 class="event-time text-uppercase">Gates Open 3:05 PM<br>Start time 5:30 PM</h5>
+        <hr>
+        <h6 class="event-title">GC Titans v Brisbane Broncos</h6>
+        <div class="text-only" data-nb-lines="3"><p>Grudge matches don&rsquo;t get any bigger than this Big Brother v Little Brother derby between southeast Queensland rivals Gold Coast and Brisbane.<br />
+<br />
+Always one of the biggest games on the Cbus Super Stadium calendar, this match is guaranteed to deliver a great atmosphere as these &ldquo;friendly&rdquo; rivals turn on the fireworks in Round 19.<br />
+<br />
+The Titans and Broncos split the honours in their two matches last season, with the Titans delivering a surprise belting to the Broncos at Suncorp Stadium in April, before Brisbane returned the favour to the Gold Coast at Cbus Super Stadium later in the year.<br />
+<br />
+All eyes will be on the Broncos to see how they adjust to life without Wayne Bennett, with new coach Anthony Seibold keen to make his mark on a Brisbane club that is becoming impatient for an overdue title.<br />
+<br />
+But they will have to get past the Titans first, with the new-look Gold Coast team determined to defend their patch and prove that the powerbase among the Queensland-based NRL clubs has shifted forever.<br />
+<br />
+Gold Coast fans, we need you with us! Grab your ticket and get behind your team.<br />
+<br />
+Don&rsquo;t forget we have dedicated seating bays available for opposition fans, and every ticket includes free public transport on QR Trains and Translink bus services.<br />
+<br />
+<strong>Gates Open: 3:00pm<br />
+Curtain Raiser&nbsp;All Star International: 3:05pm</strong><br />
+<b><strong>NRL Kick Off: 5:30pm</strong></b></p>
+</div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-end mt-3">
+         <h7 class="border p-2 hover text-center mt-2"><a href="/Events/GC-Titans-v-Brisbane-Broncos.aspx" class="text-uppercase">more information</a></h7>
+         <h7 class='border ml-sm-3 p-2 hover text-center mt-2'><a href='https://premier.ticketek.com.au/shows/Show.aspx?sh=TIT1919' target='_blank' class='text-uppercase'>buy tickets</a></h7>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="event row no-gutters mt-3" data-category="13">
+  <div class="col-4">
+    <img src="/CMSPages/GetFile.aspx?guid=d0966bda-abf9-4e42-9dc6-0fbadf22ab10" class="cover-img-top position-absolute">
+  </div>
+  <div class="col-8 gradient-color-vertical-background">
+    <div class="d-flex flex-column justify-content-between h-100 p-3">
+      <div>
+        <h7 class="event-date text-uppercase">Fri 16 Aug</h7>
+        <h5 class="event-time text-uppercase">Gates Open 3:50 PM<br>Start time 6:00 PM</h5>
+        <hr>
+        <h6 class="event-title">GC Titans v Parramatta Eels</h6>
+        <div class="text-only" data-nb-lines="3"><p>We all know what happens when a snake gets backed into a corner, but what about an Eel?<br />
+<br />
+Despite Parramatta&rsquo;s season of disaster in 2018, this is looming as one of the danger games for the Titans at Cbus Super Stadium in 2019. The Eels, one of the pre-season title favourites, imploded last season to finish at the bottom of the ladder.<br />
+<br />
+But with the addition of key playing personnel, and the guidance of astute coach Brad Arthur, the NRL&rsquo;s &ldquo;other&rdquo; blue-and-golds will be on a revenge mission this season.<br />
+<br />
+Despite their poor season last year, the Eels were still dangerous enough to toss the Titans in their one and only match-up &ndash; a disappointing 28-12 loss for the Gold Coast in Sydney.<br />
+<br />
+It was a hammer blow for the Titans&rsquo; season, and has not been forgotten. The Gold Coast boys will be looking to return the favour when the Eels come to town in Round 22.<br />
+<br />
+Don&rsquo;t forget we have dedicated seating bays available for opposition fans, and every ticket includes free public transport on QR Trains and Translink bus services.<br />
+<br />
+<strong>Gates Open: 3:50pm<br />
+Curtain Raiser Women&#39;s (Match TBC): 3:55pm</strong><br />
+<b><strong>NRL Kick Off: 6:00pm</strong></b></p>
+</div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-end mt-3">
+         <h7 class="border p-2 hover text-center mt-2"><a href="/Events/GC-Titans-v-Parramatta-Eels.aspx" class="text-uppercase">more information</a></h7>
+         <h7 class='border ml-sm-3 p-2 hover text-center mt-2'><a href='https://premier.ticketek.com.au/shows/Show.aspx?sh=TIT2219' target='_blank' class='text-uppercase'>buy tickets</a></h7>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="event row no-gutters mt-3" data-category="13">
+  <div class="col-4">
+    <img src="/CMSPages/GetFile.aspx?guid=e60c4eca-c651-4991-b1b7-9c82d754aac1" class="cover-img-top position-absolute">
+  </div>
+  <div class="col-8 gradient-color-vertical-background">
+    <div class="d-flex flex-column justify-content-between h-100 p-3">
+      <div>
+        <h7 class="event-date text-uppercase">Sat 07 Sep</h7>
+        <h5 class="event-time text-uppercase">Gates Open 5:20 PM<br>Start time 7:30 PM</h5>
+        <hr>
+        <h6 class="event-title">GC Titans v St. George Illawarra Dragons</h6>
+        <div class="text-only" data-nb-lines="3"><p>The Dragons proved to be a revelation last season, finally exploding the myth about them being late-season chokers and establishing themselves as one of the true powerhouses of the NRL premiership.<br />
+<br />
+As usual, the Dragons had an electric start to the year, but when their form and results started to slide late in the season, many were quick to write them off as a genuine premiership threat.<br />
+<br />
+That criticism needed a rethink however when the Dragons belted the Broncos 48-18 in the first week of the NRL finals at Suncorp Stadium in a boilover no one saw coming.<br />
+<br />
+The Dragons will be looking to build on that reputation in 2019, and will be riding on one of the most potent attacking combinations in the competition with former Eel Corey Norman joining Ben Hunt and Gareth Widdop in the Red V this season.<br />
+<br />
+Don&rsquo;t forget we have dedicated seating bays available for opposition fans, and every ticket includes free public transport on QR Trains and Translink bus services.<br />
+<br />
+<strong>Gates Open:&nbsp;5:20pm<br />
+Curtain Raiser (Match TBC): 5:25pm</strong><br />
+<b><strong>NRL Kick Off: 7:30pm</strong></b></p>
+</div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-end mt-3">
+         <h7 class="border p-2 hover text-center mt-2"><a href="/Events/GC-Titans-v-St-George-Illawarra-Dragons.aspx" class="text-uppercase">more information</a></h7>
+         <h7 class='border ml-sm-3 p-2 hover text-center mt-2'><a href='https://premier.ticketek.com.au/shows/Show.aspx?sh=TIT2519' target='_blank' class='text-uppercase'>buy tickets</a></h7>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+<footer class="container no-gutters-xs-only">
+	<div class="bg-white">
+		<div class="row no-gutters bg-white">
+	    	<div class="col-12 d-flex flex-wrap bg-white no-gutters">		
+		    	<div class="col-6 col-sm-3 mt-2">
+                  <a id="p_lt_ctl02_Link_Button_btnElem_hyperLink" href="https://membership.titans.com.au/memberships" target="_blank"><img id="p_lt_ctl02_Link_Button_btnElem_image" class="img-fluid w-100" src="/Cbussuperstadium/media/CbusSuperStadium/promos/Gold-Coast-Titans-Membership-2019.png?ext=.png" /><span id="p_lt_ctl02_Link_Button_btnElem_lblText"></span></a>
+
+		    	</div>
+		    	<div class="col-6 col-sm-3 mt-2">
+                  <a id="p_lt_ctl03_Link_Button1_btnElem_hyperLink" href="http://www.qldmegafan.com.au/" target="_blank"><img id="p_lt_ctl03_Link_Button1_btnElem_image" class="img-fluid w-100" src="/Cbussuperstadium/media/CbusSuperStadium/promos/MEGAFAN_SQUARE@2x.png?ext=.png" /><span id="p_lt_ctl03_Link_Button1_btnElem_lblText"></span></a>
+
+		    	</div>
+		    	<div class="col-6 col-sm-3 mt-2">
+                  <a id="p_lt_ctl04_Link_Button2_btnElem_hyperLink" href="https://www.facebook.com/CbusSuperStadium/" target="_blank"><img id="p_lt_ctl04_Link_Button2_btnElem_image" class="img-fluid w-100" src="/Cbussuperstadium/media/CbusSuperStadium/promos/FACEBOOK-PROMO_SQUARE@x2.png?ext=.png" /><span id="p_lt_ctl04_Link_Button2_btnElem_lblText"></span></a>
+
+		    	</div>
+		    	<div class="col-6 col-sm-3 mt-2">
+                    <div class="insta-container">
+                        <span class="sti insta"><i class="fab fa-2x fa-instagram"></i></span>
+                        <div id="instafeed"></div>
+                    </div>
+		    	</div>
+		    </div>
+	    </div>
+    	<div class="row no-gutters mb-3">
+    		<div class="col-12 col-md-4 d-flex flex-column justify-content-center">
+    			<h8 class="text-center text-md-left text-uppercase ml-3">our partners</h8>
+    		</div>
+    		<div id="partner-carousel" class="col-12 col-md-8 no-gutters">
+               
+<a href="https://www.rugby.com.au/" target="_blank">  
+  <img src='/CMSPages/GetFile.aspx?guid=25c29240-9ff7-41df-bab1-48b2dfbbdca9' class='cover-img'>
+</a><a href="https://www.cbussuper.com.au/" target="_blank">  
+  <img src='/CMSPages/GetFile.aspx?guid=a5de948f-425f-4ded-ba15-9bee4266b2d3' class='cover-img'>
+</a><a href="https://www.titans.com.au/" target="_blank">  
+  <img src='/CMSPages/GetFile.aspx?guid=5ef46cc1-0af6-4a97-b38d-e08cad666e29' class='cover-img'>
+</a><a href="https://www.nrl.com/" target="_blank">  
+  <img src='/CMSPages/GetFile.aspx?guid=60e6b4b1-fa34-49d0-80de-aac1e18a2699' class='cover-img'>
+</a>
+
+    		</div>
+    	</div>
+    	<div class="d-none d-md-flex justify-content-between mt-2 pl-md-3 pr-md-3">
+			<h10>
+				<a href="/" class="text-uppercase pr-2">Home</a><span>|</span> 
+    			<a href="/the-venue/conditions-of-entry.aspx" class="text-uppercase pr-2 pl-2">Conditions of entry</a><span>|</span>
+    			<a href="/venue-hire/venue-functions.aspx" class="text-uppercase pr-2 pl-2">Venue Functions</a><span>|</span>
+
+    			<a href="https://stadiums.qld.gov.au/Careers.aspx" target="_blank" class="text-uppercase pr-2 pl-2">Careers</a><span>|</span>
+    			<a href="/about-us/contact-us.aspx" class="text-uppercase pr-2 pl-2">Contact us</a>
+    		</h10>
+    		<h10><a href="/copyright.aspx" class="text-uppercase pr-2 pl-2">Copyright</a> <span>|</span> <a href="/disclaimer.aspx" class="text-uppercase pr-2 pl-2">Disclaimer</a><span>|</span><a href="/privacy.aspx" class="text-uppercase pr-2 pl-2">Privacy</a></h10>
+    	</div>
+    	<div class="d-md-none">
+			<h10 class="text-center text-white text-uppercase primary-color-background p-3 border-top"><a href="/">Home</a></h10>
+			<h10 class="text-center text-white text-uppercase primary-color-background p-3 border-top"><a href="/the-venue/conditions-of-entry.aspx">Conditions of entry</a></h10>
+			<h10 class="text-center text-white text-uppercase primary-color-background p-3 border-top"><a href="/venue-hire/venue-functions.aspx">Venue Functions</a></h10>
+			<h10 class="text-center text-white text-uppercase primary-color-background p-3 border-top"><a href="https://stadiums.qld.gov.au/Careers.aspx" target="_blank">Careers</a></h10>
+			<h10 class="text-center text-white text-uppercase primary-color-background p-3 border-top"><a href="/about-us/contact-us.aspx">Contact us</a></h10>
+		</div>
+    	<hr class="m-2">
+    	<div class="d-flex flex-column flex-md-row align-items-center justify-content-between pl-3 pr-3">
+    		<h10><a href="/" class="text-uppercase pr-2">CBUS SUPER STADIUM</a><span>|</span><a href="tel:0756565500" class="text-uppercase pr-2 pl-2">Telephone: (07) 5656 5500 </a><span>|</span><a href="mailto:info@cbussuperstadium.com.au" class="text-uppercase pr-2 pl-2">Email: info@cbussuperstadium.com.au</a><span class="d-md-none">|</span><a href="/copyright.aspx" class="text-uppercase pl-2 pr-2 d-md-none">Copyright</a> <span class="d-md-none">|</span> <a href="/disclaimer.aspx" class="text-uppercase pr-2 pl-2 d-md-none">Disclaimer</a><span class="d-md-none">|</span><a href="/privacy.aspx" class="text-uppercase pr-2 pl-2 d-md-none">Privacy</a></h10>
+    		<div class="d-none d-sm-flex">
+                <a href="https://www.facebook.com/CbusSuperStadium" target="_blank"><span class="sti fb"></span></a>
+                <a href="https://www.instagram.com/cbussuper.stadium/" target="_blank"><span class="sti insta"></span></a>
+                <a href="https://twitter.com/cbusstadium?lang=en" target="_blank"><span class="sti twitter"></span></a>
+                <a href="https://au.linkedin.com/company/cbus-super-stadium" target="_blank"><span class="sti linkedin"></span></a>
+			</div>
+    	</div>
+    	<h10 class="pl-3 pr-3">® STADIUMS QUEENSLAND 2018</h10>
+	</div>
+</footer>
+
+    
+    
+
+<script type="text/javascript">
+	//<![CDATA[
+WebServiceCall('/cmsapi/webanalytics', 'LogHit', '{"NodeAliasPath":"/What-s-On","DocumentCultureCode":"en-AU","UrlReferrer":""}')
+//]]>
+</script></form>
+</body>
+</html>
